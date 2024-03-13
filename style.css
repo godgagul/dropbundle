@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color:#11141a;
+}
+
+main{
+  display: grid;
+  grid-template-areas: 
+    "topbar topbar  topbar"
+    "text   text    text"
+    "globe  globe   globe"
+    "prices prices  prices"
+    "footer footer  footer";
+  row-gap: 70px;
+  grid-template-rows: auto auto 600px auto auto;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-color: #000000;
+  grid-area: topbar;
+}
+
+.logo{
+  max-width: 80px;
+}
+
+.picture{
+  max-width: 100%;
+  display: table;
+}
+
+.inner_header{
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo_container{
+  height: 100%;
+  display: table;
+  float: left;
+  margin-left:3%;
+}
+
+.logo_container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Montserrat';
+  font-size: 40px;
+}
+
+.navigation{
+  float: right;
+  height: 100%;
+  margin-right: 3%;
+}
+
+.navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+
+.navigation a:last-child{
+  padding-right: 0;
+}
+
+.navigation a li{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+
+.text{
+  color: white;
+  font-family: 'Montserrat';
+  grid-area: text;
+  text-align: center;
+}
+
+.copywriting_headline{
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 30px;
+
+}
+
+.copywriting{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.fade{
+  background: -webkit-linear-gradient(#34baf3,#b4b4b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.black_fade{
+  background: -webkit-linear-gradient(#0a0a4b,#4d81ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.globe{
+  grid-area: globe;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.earth{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left:0;
+  min-width: 100%;
+  min-height: 100%;
+  grid-area: globe;
+}
+
+.notes{
+  position: relative;
+  text-align: center;
+  padding-left: 10%;
+  left: -22%;
+  top: 35%;
+  font-family:'Montserrat';
+  font-size: 35px;
+  text-align: left;
+}
+
+.contact{
+  display: block;
+  margin: 15px 22%;
+  color: grey;
+  width: 55%;
+  font-size: 20px;
+}
+
+.contact_header{
+  color: white;
+  font-family: 'Montserrat';
+  grid-area: text;
+  text-align: center;
+  display: block;
+}
+
+.clickable:hover{
+  color:#b4b4b4;
+}
+
+.image_container{
+  grid-area: prices;
+
+}
+
+.image{
+  width:70%;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+footer{
+  background-color: #000000;
+  height: 500px;
+  grid-area: footer;
+  font-family: 'Montserrat';
+  color: white;
+  text-align: center;
+  vertical-align: center;
+}
