@@ -155,16 +155,16 @@ main{
   font-size: 20px;
 }
 
+.clickable:hover{
+  color:#b4b4b4;
+}
+
 .contact_header{
   color: white;
   font-family: 'Montserrat';
   grid-area: text;
   text-align: center;
   display: block;
-}
-
-.clickable:hover{
-  color:#b4b4b4;
 }
 
 .image_container{
