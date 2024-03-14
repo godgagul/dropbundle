@@ -187,3 +187,21 @@ footer{
   text-align: center;
   vertical-align: center;
 }
+
+.btn{
+		border-style: solid;
+		border-width: 4px;
+		border-color: #368fb6;
+		background-color: transparent;
+    font-size: large;
+		height: 60px;
+		width: 140px;
+		font-weight: bold;
+		border-radius: 3px;
+    border-radius: 30px;
+    margin-top: 2%;
+}
+
+.btn_txt{
+  color: #ffffff;
+}
